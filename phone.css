@@ -4,21 +4,36 @@
   box-sizing: border-box;
 }
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin: 60px auto 20px;
 }
 #search-form {
-  height: 55px;
+  height: 45px;
 }
 #search-box {
   padding: 0 20px;
+  font-size: 0.9rem;
 }
 #search-box::placeholder {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
-#search-btn {
-  font-size: 1rem;
-  padding: 0 16px;
+#search-form button {
+  font-size: 0.9rem;
+  padding: 0 14px;
 }
+#search-result {
+  grid-gap: 10px;
+  width: 85%;
+  margin: 50px auto 40px;
+}
+#search-result a {
+  height: 90px;
+  width: 90px;
+}
+#search-box a img {
+  object-fit: contain;
+}
+
 #show-more-btn {
-  padding: 8px 12px;
+  padding: 5px 8px;
 }
