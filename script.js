@@ -38,3 +38,4 @@ showMoreBtn.addEventListener("click", () => {
   page++;
   getImageData();
 });
+
