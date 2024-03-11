@@ -14,8 +14,8 @@ body {
 h1 {
   text-align: center;
   margin: 100px auto 50px;
-  color: white;
   font-weight: 600;
+  color: #1d1442;
 }
 #search-form {
   max-width: 90%;
@@ -42,7 +42,7 @@ h1 {
 }
 #search-box::placeholder {
   font-size: 18px;
-  color: #cac7c7;
+  color: rgb(123, 117, 117);
 }
 #search-form button {
   padding: 0 40px;
