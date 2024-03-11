@@ -1,15 +1,13 @@
 let searchForm = document.querySelector("#search-form");
 let searchResult = document.querySelector("#search-result");
 let showMoreBtn = document.querySelector("#show-more-btn");
+
 let searchBox = document.querySelector("#search-box");
 let apiKey = `1s30P13c36fJmMvruq7OegrVw_XPqdY_ESDCUVqKV9s`;
-
-let input = "";
 let page = 1;
 
 async function getImageData() {
-  let input = searchBox.value;
-  let url = `https://api.unsplash.com/search/photos?page=${page}&query=${input}&client_id=${apiKey}&per_page=12`;
+  let url = `https://api.unsplash.com/search/photos?page=${page}&query=${searchBox.value}&client_id=${apiKey}&per_page=12`;
   let response = await fetch(url);
   let data = await response.json();
   if (page === 1) {
@@ -38,4 +36,3 @@ showMoreBtn.addEventListener("click", () => {
   page++;
   getImageData();
 });
-
